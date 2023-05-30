@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Selection</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1>Food Selection</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <form id="foodForm">
+      <label for="foodName">Food Name:</label>
+      <input type="text" id="foodName" required>
+
+      <label for="foodType">Food Type:</label>
+      <select id="foodType" required>
+        <option value="Fruit and vegetables">Fruit and vegetables</option>
+        <option value="Starchy food">Starchy food</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Protein">Protein</option>
+        <option value="Fat">Fat</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <table id="foodTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Food details will be dynamically added here -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Food Selection. All rights reserved.</p>
+    <div class="social-media">
+        <a href="https://web.facebook.com/osamayaseen97/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/osama_ya/" class="fa fa-instagram"></a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
